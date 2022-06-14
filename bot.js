@@ -1,7 +1,6 @@
 const { Telegraf } = require('telegraf');
-const bot = new Telegraf(config.bot.token);
 const config = require('./config');
-
+const bot = new Telegraf(config.bot.token);
 
 bot.start((ctx) => ctx.reply(config.start));
 bot.help((ctx) => {
