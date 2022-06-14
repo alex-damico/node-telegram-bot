@@ -4,7 +4,10 @@ const config = require('./config');
 
 
 bot.start((ctx) => ctx.reply(config.start));
-bot.help((ctx) => ctx.reply(config.help));
+bot.help((ctx) => {
+    const commands = `/${config.commands.map((element) => element.key).join(' /')}`;
+    ctx.reply(config.help + commands);
+});
 
 config.commands.forEach(element => {
     bot.command(element.key, (ctx) => {
