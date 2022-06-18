@@ -10,8 +10,8 @@ bot.help((ctx) => {
 
 config.commands.forEach(element => {
     bot.command(element.key, (ctx) => {
-        const nameCmd = ctx.update.message.text.slice(1).replace(config.bot.name, '');
-        const [cmd] = config.commands.filter(x => x.key === nameCmd);
+        const keyCmd = ctx.message.text.replace('/', '');
+        const [cmd] = config.commands.filter(x => x.key === keyCmd);
         if (cmd) {
             ctx.reply(cmd.value);
         } else {

@@ -2,14 +2,14 @@
 Telegram Bot
 
 ## Creare un bot telegram e ottenere il Token
-Eccoci arrivati al primo passaggio. Creare un bot telegram è molto molto semplice. Ci basterà contattare su telegram il padre di tutti i bot, il @BotFather.
+Creare un bot telegram è molto molto semplice. Ci basterà contattare su telegram il padre di tutti i bot, il @BotFather.
 Per trovarlo vi basterà cercare nella barra di ricerca di Telegram, @BotFather.
 
 Dopo averlo trovato dovrete eseguire dei semplici comandi per creare il bot e assegnarli un nome.
 Scrivendo  ```/newbot``` il BotFather vi chiederà un nome da assegnare al vostro bot, potete usare quello che volete. Dopodiché dovrete assegnarli un username che finisca con la parola bot. Facendo un esempio pratico:
 
 
-- Nome: ArancinDeployBot
+- Nome: ArancinDeploy Bot
 - Username: ArancinDeployBot
 
 Dopo aver dato anche l’username (se disponibile) il BotFather vi darà un messaggio di conferma dicendo che il bot è stato creato correttamente e vi darà un Token.
@@ -19,8 +19,7 @@ File ```config.js```
 ```
 {
     bot: {
-        token: "", <--- riportare il token del bot
-        name: "@ArancinDeployBot" <--- riportare il nome del bot
+        token: "", <--- riportare il token del bot 
     },
     help: "Ecco la lista dei comandi a disposizione: ", <-- vengo accodati i comandi disponibili
     start: "Avvio bot", <--- messaggio avvio bot
