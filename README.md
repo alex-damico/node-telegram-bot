@@ -19,7 +19,7 @@ File ```config.js```
 ```
 {
     bot: {
-        token: "", <--- riportare il token del bot 
+        token: "", <--- riportare il token del bot oppure avviare il processo con la variabile BOT_TOKEN valorizzata 
     },
     help: "Ecco la lista dei comandi a disposizione: ", <-- vengo accodati i comandi disponibili
     start: "Avvio bot", <--- messaggio avvio bot
@@ -53,3 +53,9 @@ Installare pm2 ```npm install pm2 -g```.
 - Cancellare processo ```pm2 delete bot.js```
 - Log ```pm2 monit```
 - Lista processi ```pm2 list```
+
+### Configurazione startup con pm2
+- Init startup ```pm2 startup```
+- Eseguire il comando che viene stampato ```sudo su -c "env PATH=$PATH:/home/unitech/.nvm/versions/node/v14.3/bin pm2 startup <distribution> -u <user> --hp <home-path>```
+- Avviare il processo ```pm2 start bot.js```
+- Salvare la cofiguirazione ```pm2 save```
