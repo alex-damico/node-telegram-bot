@@ -43,7 +43,6 @@ team - organizzatori
 where - dove
 when - quando
 faq - informazioni conferenza
-flight - voli
 transfer - trasferimenti
 ```
 
