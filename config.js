@@ -1,6 +1,7 @@
 module.exports = {
     bot: {
         token: "",
+        name: "ArancinDeployBot"
     },
     help: "🆘 Ecco la lista dei comandi a disposizione: ",
     start: "Avvio bot",

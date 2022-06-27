@@ -8,14 +8,12 @@ bot.help((ctx) => {
     ctx.reply(config.help + commands);
 });
 
-config.commands.forEach(element => {
-    bot.command(element.key, (ctx) => {
-        const keyCmd = ctx.message.text.replace('/', '');
-        const [cmd] = config.commands.filter(x => x.key === keyCmd);
-        if (cmd) {
-            ctx.reply(cmd.value);
-        }
-    })
+bot.command((ctx) => {
+    const keyCmd = ctx.message.text.replace('/', '').replace(`@${config.bot.name}`, '');
+    const [cmd] = config.commands.filter(x => x.key === keyCmd);
+    if (cmd) {
+        ctx.reply(cmd.value);
+    }
 });
 
 bot.launch();
