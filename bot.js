@@ -14,8 +14,6 @@ config.commands.forEach(element => {
         const [cmd] = config.commands.filter(x => x.key === keyCmd);
         if (cmd) {
             ctx.reply(cmd.value);
-        } else {
-            ctx.reply('Error: command not found');
         }
     })
 });
