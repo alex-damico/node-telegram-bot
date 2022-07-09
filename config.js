@@ -47,5 +47,10 @@ Se hai altri dubbi contatta pure un organizzatore.
         value: `Trasfetimenti 🚕
 Informazioni sui trasferimenti https://docs.google.com/document/d/18q6wzzH9RBXGa72nliXPCInIYTYJHz7W1temjoN27xA/edit?usp=sharing
         `
+    }, {
+        key: "promo-code", 
+        value: `🛎🛎 Codice promozionale per Hotel
+Il codice promozionale è "Arancine e deploy" (scusate se non abbiamo usato la ə, era per evitare incomprensioni 😇)
+        `
     }]
 };

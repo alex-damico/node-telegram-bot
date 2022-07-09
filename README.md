@@ -44,6 +44,7 @@ where - dove
 when - quando
 faq - informazioni conferenza
 transfer - trasferimenti
+promo-code - codice promozionale per hotel
 ```
 
 
